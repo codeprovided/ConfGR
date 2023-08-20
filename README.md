@@ -1,7 +1,7 @@
 # GroupDC
-An example for Amazon-ele dataset
+An example for MaFengWo dataset
 
-run DINNER/run.py
+run code/main.py
 
-    python DINNER/run.py
-If u want try more experients about DINNER, you can change params you need in DINNER/args.py and run DINNER/run.py again.
+    python main.py
+If u want try more experients about DINNER, you can change params you need in code/main.py and run code/main.py again.
