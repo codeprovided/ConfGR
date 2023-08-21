@@ -20,18 +20,7 @@ class GroupDataset(object):
         
         self.groupRatingTest_txt=path+dataset+'/groupRatingTest.txt'
         self.groupRatingNegative_txt=path+dataset+'/groupRatingNegative.txt'
-        # self.userFollow_txt=path+dataset+'/userFollow.txt'
-        # user data
-        # self.user_trainMatrix = self.load_rating_file_as_matrix(user_path + "Train.txt")
-        # self.user_testRatings = self.load_rating_file_as_list(user_path + "Test.txt")
-        # self.user_testNegatives = self.load_negative_file(user_path + "Negative.txt")
-        # self.num_users, self.num_items = self.user_trainMatrix.shape
-        # group data
-        # self.group_trainMatrix = self.load_rating_file_as_matrix(group_path + "Train.txt")
-        # self.group_testRatings = self.load_rating_file_as_list(group_path + "Test.txt")
-        # self.group_testNegatives = self.load_negative_file(group_path + "Negative.txt")
         
-        # user data
         
     def get_gi_g_matrix(self,):
         
