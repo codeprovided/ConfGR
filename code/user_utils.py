@@ -19,17 +19,7 @@ class UserDataset(object):
         self.userFollow_txt=path+dataset+'/userFollow.txt'
         self.userRatingTest_txt=path+dataset+'/userRatingTest.txt'
         self.userRatingNegative_txt=path+dataset+'/userRatingNegative.txt'
-        # user data
-        # self.user_trainMatrix = self.load_rating_file_as_matrix(user_path + "Train.txt")
-        # self.user_testRatings = self.load_rating_file_as_list(user_path + "Test.txt")
-        # self.user_testNegatives = self.load_negative_file(user_path + "Negative.txt")
-        # self.num_users, self.num_items = self.user_trainMatrix.shape
-        # group data
-        # self.group_trainMatrix = self.load_rating_file_as_matrix(group_path + "Train.txt")
-        # self.group_testRatings = self.load_rating_file_as_list(group_path + "Test.txt")
-        # self.group_testNegatives = self.load_negative_file(group_path + "Negative.txt")
         
-        # user data
         
 
     # 成员级社会选择+成员级社会影响
