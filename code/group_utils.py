@@ -29,8 +29,6 @@ class GroupDataset(object):
         self.item_num=ui_data[1].max()+1
         
         
-        
-        # group,list user
         u_g_data=pd.read_csv(self.group_member_txt,sep=' ',header=None)
         self.group_num=len(u_g_data)
         user_index=[]
@@ -45,7 +43,7 @@ class GroupDataset(object):
                                 dtype=np.float32,shape=(self.group_num, self.user_num))  
         ug_matrix=sp.csr_matrix((np.ones_like(user_index),(np.array(user_index),np.array(group_index))), 
                                 dtype=np.float32,shape=(self.user_num, self.group_num))  
-        # 共同用户
+       
         gg=gu_matrix.dot(ug_matrix) 
         gg_matrix=sp.csr_matrix((np.ones_like(gg.data),gg.indices,gg.indptr),
                                 dtype=np.float32,shape=(self.group_num, self.group_num)) 
@@ -60,7 +58,7 @@ class GroupDataset(object):
                          dtype=np.float32,shape=(self.group_num, self.item_num))
         gi_g_matrix=vstack((gg_matrix,ig_matrix))
         
-                        # 计算D^-1,  计算A用的
+                       
         return gi_g_matrix,gg_matrix,gg ,gi_matrix,gu_matrix
     
     
