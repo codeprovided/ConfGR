@@ -42,4 +42,4 @@ model=ModelName(args,user_num,item_num,group_num,ui_g_matrix,ug_affect_matrix,ui
 for i in range(args.epochs):
     train(args,user_train_loader,group_train_loader,model,i+1,group_train_loader)
     evaluate(model,groupTest,groupNeg,5,'group')
-    evaluate(model,groupTest,groupNeg,10,'group')
+    
