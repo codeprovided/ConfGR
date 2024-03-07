@@ -1,4 +1,4 @@
-# GroupDC
+# ConfGR
 An example for MaFengWo dataset
 
 run code/main.py
